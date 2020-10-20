@@ -1,7 +1,17 @@
+@import url("./fonts.css");
+
+:root {
+    --primary: #FECE1A;
+    --secondary: #181A1C;
+    --white: #FFFFFF;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .margin-30 {
     margin-top: 30px;
@@ -20,7 +30,7 @@
 }
 
 .container {
-    background-color: #FECE1A;
+    background-color: var(--primary);
     padding: 30px 0;
     }
 .text-center {
@@ -28,25 +38,25 @@
 }
 .text-yellow {
     font-size: 20px;
-    color: #FECE1A;
+    color: var(--primary);
 }
 h2 {
     font-size: 38.5px;
-    color: #181A1C;
+    color: var(--secondary);
 }
 .text-black {
     font-size: 20px;
-    color: #181A1C;
+    color: var (--secondary);
 }
 .text-white {
     font-size: 17px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 .line {
-    color: #181A1C;
+    color: var(--secondary);
    }
 .button {
- border: 1px solid #181A1C;
+ border: 1px solid var(--secondary);
     padding: 8px 25px;
     margin: 0 3px;
     display: inline-flex;
@@ -57,8 +67,8 @@ h2 {
 
 /*!!!!!!!!!!!!!!!!!!!!*/
 :hover.button {
-    background-color: #181A1C;
-    color: #FFFFFF;
+    background-color: var(--secondary);
+    color: var(--white);
 }
 .image-wrap {
 margin: 30px 0;
@@ -75,5 +85,5 @@ img {
 .image-text {
     width: 370px;
     height: 80px;
-    background-color: #181A1C;
+    background-color: var(--secondary);
    }
