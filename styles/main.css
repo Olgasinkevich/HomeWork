@@ -1,0 +1,274 @@
+@import url("./fonts.css");
+
+:root {
+    --primary: #FECE1A;
+    --secondary: #181A1C;
+    --white: #FFFFFF;
+}
+ html, body {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.margin-30 {
+    margin-top: 30px;
+
+}
+
+.text-center {
+    color: var(--secondary);
+    text-align: center;
+}
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-yellow {
+    font-size: 20px;
+    color: var(--primary);
+}
+
+.text-black {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.text-white {
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--white);
+}
+.yellow {
+    color: var(--primary);
+}
+.black {
+    border-color: var(--secondary);
+}
+
+.content-width {
+    width: 1170px;
+/*    padding: 0 368px;*/
+    margin: 0 auto;
+}
+
+.container {
+    background-color: var(--primary);
+    padding: 30px 0;
+}
+
+.header {
+  /*  width: 1905px;*/
+    height: 62px;
+    background-color: var(--secondary)
+}
+
+.header-row {
+    padding: 11px 0;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-row > button {
+    border: 1px solid var(--primary);
+    color: var(--white);
+    margin-left: 6px;
+    padding: 10px 15px;
+}
+
+div.button-row > button {
+    padding: 10px 15px;
+    color: var(--white);
+    border: 1px solid var(--primary);
+    margin: 0 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-container {
+    position: relative;
+/*    opacity: .85;
+    background-image: url("../images/advertisementBackground.jpg");
+    background-color: var(--primary);*/
+}
+.header-overlay {
+    background-image: url("../images/advertisementBackground.jpg");
+    z-index: 1;
+}
+
+.header-content-container {
+    background-color: var(--primary);
+    opacity: .85;
+    z-index: 10;
+}
+
+.header-content {
+    padding: 122px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.header-content > button {
+    width: 81px;
+    height: 20px;
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+
+.content {
+    width: 585px;
+    height: 256px;
+
+}
+
+div.header-row > img {
+    width: 115px;
+    margin-right: auto;
+/*    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;*/
+}
+
+.devices {
+    width: 320px;
+    height: 250px;
+
+}
+
+h2 {
+    font-size: 38.5px;
+    color: var(--secondary);
+    font-weight: 400;
+}
+
+.market > h2 {
+    color: var(--white);
+}
+
+h3 {
+    font-size: 33px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.market {
+    height: 586px;
+    padding-top: 50px;
+    background-color: var(--secondary);
+}
+.wedo {
+    color: var(--white);
+}
+
+.col-3 {
+    width: 390px;
+    height: 288px;
+    padding: 80px 0;
+
+}
+
+.icon-3 {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+:hover.icon-3 {
+    width: 170px;
+    height: 170px;
+}
+
+button {
+    background-color: transparent;
+}
+
+.button {
+    border: 1px solid var(--secondary);
+    padding: 8px 25px;
+    margin: 0 3px;
+    display: inline-flex;
+    font-size: 17px;
+    font-weight: 400;
+
+}
+
+/*!!!!!!!!!!!!!!!!!!!!*/
+:hover.button {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.image-wrap {
+    margin: 30px 0;
+}
+.image-subtitle {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.icon-3 > img {
+    border-radius: 50%;
+}
+
+.image {
+    width: 370px;
+    height: 230px;
+    object-fit: contain;
+}
+
+.image-text {
+    width: 370px;
+    background-color: var(--secondary);
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+div.icon-3 + div.image-text {
+    width: 270px;
+}
+.col-i-3 {
+    width: 348px;
+    height: 423px;
+    padding: 10px;
+    border: 1px solid var(--white);
+    margin-top: 30px;
+}
+.footer {
+    background-color: var(--primary);
+}
+.footer-content {
+height: 312px;
+}
+
+.footer-row {
+    background-color: var(--secondary);
+    box-sizing: border-box;
+    padding: 10px;
+    height: 20px;
+}
