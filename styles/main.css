@@ -27,6 +27,10 @@ html, body {
     margin-top: 30px;
 }
 
+.margin-50 {
+    margin-top: 50px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -44,6 +48,12 @@ html, body {
 .text-black {
     font-weight: 500;
     font-size: 20px;
+    color: var(--secondary);
+}
+
+.text-black-big {
+    font-weight: 400;
+    font-size: 24.5px;
     color: var(--secondary);
 }
 
@@ -157,7 +167,7 @@ div.button-row > button {
 div.header-row > img {
     width: 115px;
     margin-right: auto;
-    }
+}
 
 .devices {
     width: 320px;
@@ -273,13 +283,14 @@ img {
     width: 370px;
     background-color: var(--secondary);
     margin: 0 auto;
-    padding: 10px;
     box-sizing: border-box;
-
+    padding: 10px;
 }
+
 .image-3 {
     width: 348px;
     height: 348px;
+    margin: auto;
 }
 
 div.icon-3 + div.image-text {
@@ -288,32 +299,66 @@ div.icon-3 + div.image-text {
 
 .col-i-3 {
     width: 348px;
-   height: 423px;
+    height: 423px;
     padding: 10px;
-    border: 1px solid var(--white);
+
     margin-top: 30px;
     position: relative;
 }
+
 .col-i-3-back {
     z-index: 1;
     position: absolute;
+    border: 1px solid var(--white);
 }
+
 .col-i-3-front {
-position: absolute;
+    position: absolute;
     background-color: transparent;
     z-index: 10;
-    display: none;
 }
+
+.col-i-3-front > .image-3 {
+    visibility: hidden;
+}
+
+.col-i-3-front > .image-text {
+    visibility: hidden;
+}
+
 :hover.col-i-3-front {
-    display: ;
+    display: block;
     background-color: var(--primary);
     opacity: .85;
-    z-index: 10;
     color: var(--secondary);
 }
 
+:hover.col-i-3-front > .image-3 {
+    visibility: visible;
+    color: var(--secondary);
+}
+
+:hover.col-i-3-front > .image-text {
+    visibility: visible;
+    background-color: var(--primary);
+    opacity: .85;
+    color: var(--secondary);
+}
+
+:hover.col-i-3-front ~ .col-i-3-back > .image-text {
+    visibility: hidden;
+}
+
+.col-i-3-back > .image-text > .icon-row > i {
+    color: var(--primary);
+}
+
 i {
-    border-radius: 50%;
+    padding: 0 5px;
+}
+
+.col-i-3-front > .image-3 > h3 {
+    padding-top: 70px;
 }
 
 .form {
