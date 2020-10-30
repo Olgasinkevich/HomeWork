@@ -2,6 +2,7 @@
 
 :root {
     --primary: #FECE1A;
+    --primary-transparent: #fece1ad9;
     --secondary: #181A1C;
     --white: #FFFFFF;
     --row-size: calc(50% / 6);
@@ -39,19 +40,19 @@ html, body {
     text-transform: capitalize;
 }
 
-.text-yellow {
+.text-primary {
     font-size: 24.5px;
     color: var(--primary);
     font-weight: 400;
 }
 
-.text-black {
+.text-secondary {
     font-weight: 500;
     font-size: 20px;
     color: var(--secondary);
 }
 
-.text-black-big {
+.text-secondary-big {
     font-weight: 400;
     font-size: 24.5px;
     color: var(--secondary);
@@ -68,22 +69,21 @@ html, body {
     font-weight: 400;
 }
 
-.yellow {
+.primary {
     color: var(--primary);
 }
 
-.bg-yellow {
+.bg-primary {
     background-color: var(--primary);
     border: 0;
 }
 
-.black {
+.secondary {
     border-color: var(--secondary);
 }
 
 .content-width {
     width: 1170px;
-    /*    padding: 0 368px;*/
     margin: 0 auto;
 }
 
@@ -93,7 +93,6 @@ html, body {
 }
 
 .header {
-    /*  width: 1905px;*/
     height: 62px;
     background-color: var(--secondary)
 }
@@ -122,6 +121,7 @@ html, body {
 :hover.button, :hover.download {
     background-color: var(--secondary);
     color: var(--white);
+    cursor: pointer;
 }
 
 div.button-row > button {
@@ -136,27 +136,22 @@ div.button-row > button {
 
 .header-container {
     position: relative;
-    /*    opacity: .85;
-        background-image: url("../images/advertisementBackground.jpg");
-        background-color: var(--primary);*/
 }
 
 .header-overlay {
     background-image: url("../images/advertisementBackground.jpg");
-    z-index: 1;
 }
 
 .header-content-container {
-    background-color: var(--primary);
-    opacity: .85;
-    z-index: 10;
+    background-color: var(--primary-transparent);
 }
 
 .header-content {
-    padding: 122px 0;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .content {
@@ -172,7 +167,7 @@ div.header-row > img {
 .devices {
     width: 320px;
     height: 250px;
-
+    opacity: none;
 }
 
 h2 {
@@ -207,7 +202,6 @@ h5 {
 }
 
 .market {
-    /*   height: 586px;*/
     padding-top: 50px;
     background-color: var(--secondary);
 }
@@ -232,6 +226,7 @@ h5 {
 :hover.icon-3 {
     width: 170px;
     height: 170px;
+    cursor: pointer;
 }
 
 button {
@@ -331,11 +326,13 @@ div.icon-3 + div.image-text {
     background-color: var(--primary);
     opacity: .85;
     color: var(--secondary);
+    cursor: pointer;
 }
 
 :hover.col-i-3-front > .image-3 {
     visibility: visible;
     color: var(--secondary);
+    cursor: pointer;
 }
 
 :hover.col-i-3-front > .image-text {
@@ -343,10 +340,12 @@ div.icon-3 + div.image-text {
     background-color: var(--primary);
     opacity: .85;
     color: var(--secondary);
+    cursor: pointer;
 }
 
 :hover.col-i-3-front ~ .col-i-3-back > .image-text {
     visibility: hidden;
+    cursor: pointer;
 }
 
 .col-i-3-back > .image-text > .icon-row > i {
@@ -422,7 +421,6 @@ i {
 }
 
 .footer-content {
-    /*height: 312px;*/
     padding: 10px;
 
 }
