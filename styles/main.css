@@ -355,6 +355,9 @@ div.icon-3 + div.image-text {
 i {
     padding: 0 5px;
 }
+i:hover {
+    color: var(--secondary);
+}
 
 .col-i-3-front > .image-3 > h3 {
     padding-top: 70px;
